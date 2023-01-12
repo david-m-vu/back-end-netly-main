@@ -27,7 +27,7 @@ router.get('/', cors(), (req, res) => {
     )
 })
 
-router.get("/api", (req, res) => {
+router.get("/api/", cors(), (req, res) => {
     res.json({"Hi" : "test"});
 })
 
