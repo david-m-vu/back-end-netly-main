@@ -27,5 +27,9 @@ router.get('/', cors(), (req, res) => {
     )
 })
 
+router.get("/api", (req, res) => {
+    res.json({"Hi" : "test"});
+})
+
 app.use('/', router);
 module.exports.handler = serverless(app);
